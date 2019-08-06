@@ -1,0 +1,13 @@
+<h1>
+	This is the art page!
+</h1>
+
+<% arts.forEach(function(art){ %>
+				
+	<div>
+		<h4><%= art.name %></h4>
+		<img src="<%= art.image %>">
+	</div>
+<% }); %>
+
+<a href="/">Go to the Landing Page</a>
