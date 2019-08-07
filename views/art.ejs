@@ -1,13 +1,27 @@
+<% include partials/header %>
+
 <h1>
 	This is the art page!
 </h1>
-
-<% arts.forEach(function(art){ %>
+<a href="/">Home</a>
+<a href="/art/new">
+	<button>
+	Add new Art
+	</button>
+</a>
+<% art.forEach(function(arts){ %>
 				
 	<div>
-		<h4><%= art.name %></h4>
-		<img src="<%= art.image %>">
+		<h4><%= arts.name %></h4>
+		<img src="<%= arts.image %>">
+		<h1>Year: <%= arts.year %></h1>
 	</div>
 <% }); %>
 
-<a href="/">Go to the Landing Page</a>
+<a href="/">Home</a>
+<a href="/art/new">
+	<button>
+	Add new Art
+	</button>
+</a>
+<% include partials/footer %>

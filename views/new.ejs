@@ -1,0 +1,16 @@
+<% include partials/header %>
+<h1>
+	Add a new picture
+</h1>
+
+<form action="/art" method="post">
+	<input type="text" name="name" placeholder="name">	
+	<input type="text" name="image" placeholder="image url">
+	<input type="number" name="year" placeholder="year">
+	<button>
+		Submit
+	</button>
+</form>
+<a href="/">Home</a>
+<a href="/art">Back to Art</a>
+<% include partials/footer %>
