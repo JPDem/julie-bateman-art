@@ -4,6 +4,7 @@ var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
 
 var art = [
 		{name: "JP's Pug", image: "https://scontent-lhr3-1.cdninstagram.com/vp/d641519d9c340f86036e357f034152f4/5DD52B4E/t51.2885-15/e35/44217987_1904352233011768_8224387045356536279_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com", year: 2019},					
