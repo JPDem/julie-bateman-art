@@ -1,7 +1,7 @@
 <% include partials/header %>
 
 <header>
-<h1>This is the art page!</h1>
+<h1>Welcome to Julie Bateman Art</h1>
 </header>
 
 <a href="/">Home</a>
@@ -10,15 +10,17 @@
 	Add new Art
 	</button>
 </a>
-<% art.forEach(function(arts){ %>
-				
-	<div>
-		<h4><%= arts.name %></h4>
-		<img src="<%= arts.image %>">
-		<h1>Year: <%= arts.year %></h1>
-	</div>
-<% }); %>
 
+<div class="rows">
+	<% art.forEach(function(arts){ %>
+
+		<div class="eachArt">
+			<h2><%= arts.name %></h4>
+			<img src="<%= arts.image %>">
+			<h2>Year: <%= arts.year %></h1>
+		</div>
+	<% }); %>
+</div>
 <a href="/">Home</a>
 <a href="/art/new">
 	<button>
