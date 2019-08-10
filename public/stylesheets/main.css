@@ -1,57 +1,75 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
 	font-family: Quicksand;
 	background: rgb(246,243,241);
-	color: black;
-	margin: auto 200px;
+	color: #D21B32;
+	margin: 0 200px;
+	padding: 0
 }
 
 header {
-	background: #ffF09D51;
-	color: black;
-	font-size: 20px;
+	background: #D21B32;
+	color: rgb(246,243,241);
+	font-size: 24px;
 	font-weight: 700;
 	text-align: center;
-	padding: auto 10px;
-	margin: 7% 0 0 0;
-	letter-spacing: 1px;
-	border: solid 1px black;
+	padding: 10px 10px;
+	margin: 7% 0 10px 0;
+	letter-spacing: 2px;
 }
 
-.rows {
-	margin: auto;
-	margin-top: 20px;
+.container {
+	padding: 15px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 
 }
 
-.eachArt {
-	/* flex: 25%; */
-	max-width: 20%;
-	margin: auto 25px;
-	font-size: 16px;
-	padding: 10px;
+.row-item {
+	flex-basis: 15%;
+	box-sizing: border-box;
+	padding: 0 20px;
+	
 	
 }
 
-div .eachArt:hover {
+@media (min-width: 900px) {
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+
+@media (max-width: 861px) {
+	header {
+		font-size: 12px;
+		background: none;
+		color: #D21B32;
+		
+	}
+	body {
+		margin: 0;
+	}
+	h2 {
+		display: none;
+	}
+	.row-item {
+		margin-bottom: 40px;
+	}
+}
+
+div .row-item:hover {
 	transform: scale(1.1);
 	transition: all 0.2s ease-in-out;
+	border: black 1px solid;
 }
 
 img {
-	max-width: 250px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	box-sizing: border-box;
+	max-width: 200px;
+	max-height: auto;
 	border-radius: 6px;
-
 }
 
 h2 {
