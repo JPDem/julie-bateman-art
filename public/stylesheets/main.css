@@ -1,10 +1,55 @@
+* {
+    margin: 0;
+}
+
 body {
 	font-family: Quicksand;
 	background: rgb(246,243,241);
 	color: #D21B32;
-	margin: 0 200px;
-	padding: 0
+	padding: 0;
+	margin: 0;
 }
+
+/* Nav bar */
+nav {
+	background: #333;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav a {
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	display: block;
+	padding: 10px;
+}
+
+nav a:hover{
+	background-color: #555;
+}
+
+/* flex styles */
+@media screen and (min-width: 768px) {
+	nav ul {
+		display: flex;
+		justify-content: flex-start;
+	}
+	
+	nav li {
+		
+	}
+}
+
+/* Navbar end */
+
+.wrapper{
+	margin: 0 180px;
+}
+
 
 header {
 	background: #D21B32;
@@ -28,23 +73,29 @@ header {
 .row-item {
 	flex-basis: 15%;
 	box-sizing: border-box;
-	padding: 0 20px;
+	padding: 15px 15px;
 	
 	
 }
 
-@media (min-width: 900px) {
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+@media (max-width: 900px) {
+	header {
+		font-size: 24px;
+		background: none;
+		color: #D21B32;
+	}
+	body {
+		margin: 0;
+	}
+	h2 {
+		display: none;
 	}
 }
 
 
-@media (max-width: 861px) {
+@media only screen and (max-device-width: 667px){
 	header {
-		font-size: 12px;
+		font-size: 36px;
 		background: none;
 		color: #D21B32;
 		
@@ -63,7 +114,7 @@ header {
 div .row-item:hover {
 	transform: scale(1.1);
 	transition: all 0.2s ease-in-out;
-	border: black 1px solid;
+	box-shadow: 0 0 5px black;
 }
 
 img {
@@ -76,4 +127,9 @@ h2 {
 	font-size: 24px;
 	font-weight: 300;
 	text-align: center;
+}
+
+li a img {
+	height: 25px;
+	width: 25px;
 }
