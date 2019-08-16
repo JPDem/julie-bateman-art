@@ -120,7 +120,8 @@ header {
 
 img {
 	max-width: 200px;
-	max-height: auto;
+	height: auto;
+	max-height: 200px;
 	border-radius: 6px;
 }
 
