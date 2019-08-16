@@ -2,9 +2,13 @@
     margin: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+	
 body {
 	font-family: Quicksand;
-	background: rgb(246,243,241);
+	background: white;
 	color: #D21B32;
 	padding: 0;
 	margin: 0;
@@ -18,18 +22,19 @@ nav {
 nav ul {
 	list-style-type: none;
 	padding: 0;
+	
 }
 
-nav a {
+nav li a {
 	text-decoration: none;
-	text-align: center;
 	color: #fff;
 	display: block;
 	padding: 10px;
 }
 
-nav a:hover{
+nav li a:hover{
 	background-color: #555;
+	height: auto;
 }
 
 /* flex styles */
@@ -37,10 +42,6 @@ nav a:hover{
 	nav ul {
 		display: flex;
 		justify-content: flex-start;
-	}
-	
-	nav li {
-		
 	}
 }
 
@@ -67,28 +68,26 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
 }
 
 .row-item {
 	flex-basis: 15%;
 	box-sizing: border-box;
 	padding: 15px 15px;
-	
-	
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1096px) {
 	header {
 		font-size: 24px;
 		background: none;
 		color: #D21B32;
 	}
-	body {
-		margin: 0;
-	}
+	
 	h2 {
 		display: none;
+	}
+	.wrapper{
+	margin: 0 10px;
 	}
 }
 
@@ -109,12 +108,14 @@ header {
 	.row-item {
 		margin-bottom: 40px;
 	}
+	.wrapper{
+	margin: 0 40px;
+}
 }
 
-div .row-item:hover {
+.row-item:hover {
 	transform: scale(1.1);
 	transition: all 0.2s ease-in-out;
-	box-shadow: 0 0 5px black;
 }
 
 img {
@@ -129,7 +130,74 @@ h2 {
 	text-align: center;
 }
 
-li a img {
-	height: 25px;
-	width: 25px;
+li img {
+	width: 3vw;
+}
+
+.logo {
+	text-decoration: none;
+	margin: 0 0 0 5px;
+	float: left;
+	padding: 4px 10px;
+	font-family: "Shadows Into Light";
+	font-weight: 700;
+	font-size: 20px;
+	align-self: center;
+}
+
+/* .logo:hover {
+	transform: scale(1.2);
+	transition: transform 0.1s ease-out;
+} */
+
+span a {
+	text-decoration: none;
+	color: #D21B32;
+}
+
+.toTop {
+	text-decoration: none;
+	background: white;
+	color: #333;
+	font-size: 40px;
+	font-weight: 300;
+	border: 2px #333 solid;
+	border-radius: 50%;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0 0 0 110px;
+}
+
+.toTop:hover {
+	background: #333;	
+	transition: all 0.4s linear;
+	color: rgb(246,243,241);
+	line-height: 1;
+	
+}
+
+@keyframes shake {
+	0%, 100% {
+		transform: translate3d(0px, 0px, 0px);
+	}
+	40% {
+		transform: translate3d(0px, 0px, 0px);
+	}
+	45% {
+		transform: translate3d(1px, 0px, 0px);
+	}
+	50% {
+		transform: translate3d(-1px, 0px, 0px);
+	}
+	55% {
+		transform: translate3d(0px, 0px, 0px);
+	}
+	
+}	
+
+.toTop:hover {
+	animation: shake 2000ms 5;	
 }

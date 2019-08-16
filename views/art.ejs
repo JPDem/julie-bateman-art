@@ -17,18 +17,17 @@
 		<% art.forEach(function(arts){ %>
 
 			<div class="row-item">
-				<h2><%= arts.name %></h2>
 				<img src="<%= arts.image %>">
-				<h2>Year: <%= arts.year %></h2>
 			</div>
 		<% }); %>
 	</div>
-	<a href="/">Home</a>
-	<a href="/art/new">
+	
+	
+</div>
+<a class="toTop" href="#top" data-toggle="tooltip" title="Back to the top">^</a>
+<a hidden href="/art/new">
 		<button>
 		Add new Art
 		</button>
 	</a>
-
-</div>
 <% include partials/footer %>
