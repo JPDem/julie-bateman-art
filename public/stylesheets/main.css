@@ -12,16 +12,23 @@ body {
 	color: #D21B32;
 	padding: 0;
 	margin: 0;
+	background-image: url(https://pro2-bar-s3-cdn-cf6.myportfolio.com/e27cd9f54d8a54930a23d1c037716d2c/aeee3a12-e4f0-4dee-a900-2e8ec5e03f17_rw_1920.jpg?h=010d8f4411da768ee948cc3e9234113a);
+	background-position: center;
+	background-repeat:no-repeat;
+		
 }
 
 /* Nav bar */
 nav {
 	background: #333;
+	height: 10vh;
+	text-align: center;
 }
 
 nav ul {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 	
 }
 
@@ -51,6 +58,9 @@ nav li a:hover{
 	margin: 0 180px;
 }
 
+.hide {
+	display: none;
+}
 
 header {
 	background: #D21B32;
@@ -94,7 +104,7 @@ header {
 
 @media only screen and (max-device-width: 667px){
 	header {
-		font-size: 36px;
+		font-size: 12px;
 		background: none;
 		color: #D21B32;
 		
