@@ -137,7 +137,7 @@ nav {
 	}
 	body {
 		margin: 0;
-		overflow-x: hidden;
+		overflow: hidden;
 		height: 100vh;
 	}
 	
