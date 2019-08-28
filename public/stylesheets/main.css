@@ -17,12 +17,13 @@ body {
 
 .banner-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://pro2-bar-s3-cdn-cf3.myportfolio.com/e27cd9f54d8a54930a23d1c037716d2c/4a49de26-dd6f-401c-8603-ad09d66e53b8_rw_1920.jpg?h=addfa24dc4a5bf06f389b5ae613efc17");
-  height: 40vh;
+  height: 35vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   letter-spacing: 7px;
+	margin-top: 8vh;
   
 }
 
@@ -49,7 +50,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	min-height: 8vh;
-	background: linear-gradient(90deg, #86baa1 0%, #f55d3e 45%, #fbbe53 80%);
+	background: linear-gradient(90deg, #fbbe53 0%, #f55d3e 45%, #86baa1 71%);
 		/* #5d4954;  */
 }
 
@@ -65,7 +66,7 @@ nav {
 }
 
 .nav-links a {
-	color: rgb(226, 226, 226);
+	color: rgb(240, 240, 240);
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: 700;
@@ -79,7 +80,7 @@ nav {
 .burger div {
 	width: 25px;
 	height: 5px;
-	background-color: rgb(226, 226, 226);
+	background-color: rgb(240, 240, 240);
 	margin: 3px;
 	transition: all 0.3s ease;
 }
@@ -93,17 +94,6 @@ nav {
 
 .hide {
 	display: none;
-}
-
-header {
-	background: #D21B32;
-	color: rgb(246,243,241);
-	font-size: 30px;
-	font-weight: 700;
-	text-align: center;
-	padding: 10px 10px;
-	margin: 7% 0 10px 0;
-	letter-spacing: 2px;
 }
 
 .container {
@@ -130,7 +120,7 @@ header {
 		display: none;
 	}
 	.wrapper{
-	margin: 0 10px;
+	margin: 0;
 	}
 	.nav-links {
 		width: 60%;
@@ -153,20 +143,27 @@ header {
 	h2 {
 		display: none;
 	}
+	
+	nav {
+	position: fixed;
+  	top: 0;
+  	width: 100%;
+	z-index: 2;
+	}
 	.row-item {
 		margin-bottom: 40px;
 	}
 	
 	.wrapper{
-	margin: 0 40px;
+	margin: 0;
 	}
 	
 	.nav-links {
 		position: absolute;
 		right: 0px;
-		height: 92vh;
-		top: 8vh;
-		background-color: #5d4954;
+		height: 70vh;
+		top: 6vh;
+		background: #86baa1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
