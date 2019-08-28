@@ -23,7 +23,7 @@ body {
   background-size: cover;
   position: relative;
   letter-spacing: 7px;
-	margin-top: 8vh;
+	
   
 }
 
@@ -125,6 +125,7 @@ nav {
 	.nav-links {
 		width: 60%;
 	}
+	
 }
 
 @media screen and (max-width: 768px){
@@ -150,6 +151,11 @@ nav {
   	width: 100%;
 	z-index: 2;
 	}
+	
+	.banner-image {
+		margin-top: 8vh;
+	}
+	
 	.row-item {
 		margin-bottom: 40px;
 	}
